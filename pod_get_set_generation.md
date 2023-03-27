@@ -1,4 +1,4 @@
-### Generation of class with get & set accessors
+# Generation of class with get & set accessors
 ## Iteration 1: Fixed size
 ```
 #include <cstdio>
