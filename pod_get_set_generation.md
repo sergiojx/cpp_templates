@@ -102,6 +102,8 @@ int expexted_size(){
 
  
 private:
+// Ref1: C++ Hihg Performance Heterogeneous Containers
+// Ref2: https://stackoverflow.com/questions/33511753/how-can-i-generate-a-tuple-of-n-type-ts
 std::tuple<Types* ...> inner_pointer_tuple_;
 std::tuple<Types ...> inner_tuple_to_check_type;
 
