@@ -301,17 +301,20 @@ template <typename T, char... Chars_>
 int main(int argc, char *argv[])
 {
 
-    E<int, _("Any template can pass const strings literals")> e{999};
+    E<int, _("Any/template/can/pass/const/strings/literals")> e{999};
 
     E<std::array<float,7>, _("Another Array of floats")> y{{10,200,3000,40000,500000,6000000,70000000}};
 
     E<std::string, _("greeting")> s{"hEj Hej"};
 
+    E<std::array<std::string,4>, _("greeting")> ss{{"12", "23", "34", "56"}};
+
     printf("%s \n",e.str->c_str());
-    printf("%i \n",e.get<_("Any template can pass const strings literals")>());
+    printf("%i \n",e.get<_("Any/template/can/pass/const/strings/literals")>());
 
     printf("%f \n",y.get<_("Another Array of floats")>()[2]);
     printf("%s \n",s.get<_("greeting")>().c_str());
+    printf("%s \n",ss.get<_("greeting")>()[2].c_str());
    
 }
 ```
