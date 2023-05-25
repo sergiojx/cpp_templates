@@ -315,6 +315,7 @@ int main(int argc, char *argv[])
     printf("%f \n",y.get<_("Another Array of floats")>()[2]);
     printf("%s \n",s.get<_("greeting")>().c_str());
     printf("%s \n",ss.get<_("greeting")>()[2].c_str());
+    E<E<bool, _("logic")>, _("logicn")> l{};
    
 }
 ```
