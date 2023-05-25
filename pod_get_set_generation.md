@@ -305,10 +305,13 @@ int main(int argc, char *argv[])
 
     E<std::array<float,7>, _("Another Array of floats")> y{{10,200,3000,40000,500000,6000000,70000000}};
 
+    E<std::string, _("greeting")> s{"hEj Hej"};
+
     printf("%s \n",e.str->c_str());
     printf("%i \n",e.get<_("Any template can pass const strings literals")>());
 
     printf("%f \n",y.get<_("Another Array of floats")>()[2]);
+    printf("%s \n",s.get<_("greeting")>().c_str());
    
 }
 ```
