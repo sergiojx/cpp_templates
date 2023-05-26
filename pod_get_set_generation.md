@@ -139,6 +139,7 @@ int main()
 }
 ```
 ## Iteration 3: Chars as template args
+#### It does not work with GCC, only with clang
 ```
 #include <stdio.h>
 #include <iostream>
